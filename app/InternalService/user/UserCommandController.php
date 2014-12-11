@@ -11,4 +11,28 @@ namespace App\InternalService\User;
 
 class UserCommandController {
 
+    public function index()
+    {
+
+    }
+
+    public function store()
+    {
+
+    }
+
+    public function show()
+    {
+
+    }
+
+    public function update()
+    {
+
+    }
+
+    public function destroy()
+    {
+
+    }
 }

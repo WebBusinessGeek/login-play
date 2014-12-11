@@ -54,13 +54,14 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+			'host'      => 'localhost', //use 'localhost' via vagrant && '127.0.0.1' via testing
+			'database'  => 'loginApp',
+			'username'  => 'homestead',
+			'password'  => 'secret',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
+			'port' => '33060'
 		],
 
 		'pgsql' => [
