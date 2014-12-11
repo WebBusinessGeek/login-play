@@ -9,7 +9,11 @@
 namespace App\InternalService\User;
 
 
+use App\Polymorphic\ValidatorTrait;
+
 class UserCommandController {
+
+    use ValidatorTrait;
 
     public function index()
     {
@@ -20,27 +24,27 @@ class UserCommandController {
     {
         //check [conditional]
 
-            //validate that array contains correct keys
+            //validate that array keys match User $propertyArray - DONE
 
-            //validate that array contains correct length
+            //validate that array contains correct length - WORKING BELOW!
 
-            //validate that no other users are using any unique values
+            //validate that no other users are using any unique values - Not done
 
-            //validate format of all values
+            //validate format of all values - Not done
 
                 // - if yes
 
-                    //create new user
+                    //create new user - Not done
 
-                    //add email and password to user
+                    //add email and password to user - Not done
 
-                    //save user in database
+                    //save user in database - Not done
 
-                    //return saved in string
+                    //return saved in string - Not done
 
                 // - if no
 
-                    //return Credentials invalid.
+                    //return Credentials invalid. - Not done
     }
 
     public function show()
@@ -57,4 +61,14 @@ class UserCommandController {
     {
 
     }
+
+
+    //validate that array contains correct length - Not done
+    public function arrayLengthsMatch($arrayToCheck = [], $arrayToMatch = [])
+    {
+
+    }
+
+
+
 }
